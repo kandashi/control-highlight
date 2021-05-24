@@ -1,0 +1,106 @@
+:root {
+    --myBorderColor: #000000;
+    --myBorderWidth: 0.5px;
+    --myActiveLight: #ff0000;
+    --myActiveHighlight: #ff6400;
+}
+#sidebar-tabs > .item {
+    -webkit-text-stroke: var(--myBorderColor);
+    -webkit-text-stroke-width: var(--myBorderWidth);
+    font-size: larger;
+    text-shadow: 0 0 5px black;
+}
+
+#sidebar-tabs > .item.active {
+    border: 1px solid var(--myActiveLight);
+    box-shadow: 0 0 6px inset var(--myActiveHighlight);
+}
+
+#controls .scene-control {
+    font-size: 28px;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: var(--myBorderWidth);
+}
+
+#controls .scene-control.active,
+#controls .control-tool.active,
+#controls .scene-control:hover,
+#controls .control-tool:hover {
+    border: 1px solid var(--myActiveLight);
+    border-bottom: 1px solid var(--myActiveHighlight);
+    box-shadow: 0 0 10px var(--myActiveHighlight);
+}
+
+#hotbar .macro:hover {
+    box-shadow: 0 0 10px var(--myActiveHighlight) inset;
+  }
+
+  #navigation #scene-list .scene.view,
+#navigation #scene-list .scene.context {
+  border: 1px solid var(--myActiveLight);
+  border-bottom: 1px solid var(--myActiveHighlight);
+  box-shadow: 0 0 10px var(--myActiveHighlight);
+}
+
+#hotbar .macro.active:hover {
+    border: 1px solid var(--myActiveLight);
+}
+
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 3px;
+    background-color: var(--myActiveLight);
+    border: 1px solid var(--myActiveHighlight);
+}
+
+#sidebar-tabs {
+    flex: 0 0 32px;
+    box-sizing: border-box;
+    margin: 0 0 5px;
+    border-bottom: 1px solid var(--myActiveHighlight);
+    box-shadow: 0 0 10px var(--myActiveLight);
+}
+
+.tabs .item.active {
+    text-shadow: 0 0 10px var(--myActiveLight);
+}
+
+.filepicker .directory > li:hover {
+    text-shadow: 0 0 5px var(--myActiveLight);
+}
+
+.placeable-hud input[type="text"]:focus {
+    box-shadow: 0 0 10px var(--myActiveHighlight);
+    border: 1px solid var(--myActiveLight);
+}
+
+#sidebar-tabs {
+    border-bottom: 1px solid var(--myActiveHighlight);
+    box-shadow: 0 0 10px var(--myActiveLight);
+}
+
+#sidebar.collapsed #sidebar-tabs > .item.active {
+    border-bottom: 1px solid var(--myActiveLight);
+}
+
+li.folder.droptarget > header h3 i {
+    text-shadow: 0 0 4px var(--myActiveLight);
+}
+
+#context-menu li.context-item:hover {
+    text-shadow: 0 0 4px var(--myActiveLight)
+}
+
+#players ol .player.context .player-name {
+    text-shadow: 0 0 5px var(--myActiveLight)
+}
+
+select:focus {
+    box-shadow: 0 0 5px var(--myActiveLight)
+}
+
+button:hover,
+button:focus {
+    box-shadow: 0 0 5px var(--myActiveLight)
+}
+
