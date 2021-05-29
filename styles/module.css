@@ -3,6 +3,7 @@
     --myBorderWidth: 0.5px;
     --myActiveLight: #ff0000;
     --myActiveHighlight: #ff6400;
+    --myAnimation: ;
 }
 #sidebar-tabs > .item {
     -webkit-text-stroke: var(--myBorderColor);
@@ -14,6 +15,7 @@
 #sidebar-tabs > .item.active {
     border: 1px solid var(--myActiveLight);
     box-shadow: 0 0 6px inset var(--myActiveHighlight);
+    animation: var(--myAnimation)
 }
 
 #controls .scene-control {
@@ -29,10 +31,12 @@
     border: 1px solid var(--myActiveLight);
     border-bottom: 1px solid var(--myActiveHighlight);
     box-shadow: 0 0 10px var(--myActiveHighlight);
+    animation: var(--myAnimation)
 }
 
 #hotbar .macro:hover {
     box-shadow: 0 0 10px var(--myActiveHighlight) inset;
+    animation: var(--myAnimation)
   }
 
   #navigation #scene-list .scene.view,
@@ -40,10 +44,12 @@
   border: 1px solid var(--myActiveLight);
   border-bottom: 1px solid var(--myActiveHighlight);
   box-shadow: 0 0 10px var(--myActiveHighlight);
+  animation: var(--myAnimation)
 }
 
 #hotbar .macro.active:hover {
     border: 1px solid var(--myActiveLight);
+    animation: var(--myAnimation)
 }
 
 ::-webkit-scrollbar-thumb {
@@ -51,6 +57,7 @@
     border-radius: 3px;
     background-color: var(--myActiveLight);
     border: 1px solid var(--myActiveHighlight);
+    animation: var(--myAnimation)
 }
 
 #sidebar-tabs {
@@ -59,48 +66,69 @@
     margin: 0 0 5px;
     border-bottom: 1px solid var(--myActiveHighlight);
     box-shadow: 0 0 10px var(--myActiveLight);
+    animation: var(--myAnimation)
 }
 
 .tabs .item.active {
     text-shadow: 0 0 10px var(--myActiveLight);
+    animation: var(--myAnimation)
 }
 
 .filepicker .directory > li:hover {
     text-shadow: 0 0 5px var(--myActiveLight);
+    animation: var(--myAnimation)
 }
 
 .placeable-hud input[type="text"]:focus {
     box-shadow: 0 0 10px var(--myActiveHighlight);
     border: 1px solid var(--myActiveLight);
+    animation: var(--myAnimation)
 }
 
 #sidebar-tabs {
     border-bottom: 1px solid var(--myActiveHighlight);
     box-shadow: 0 0 10px var(--myActiveLight);
+    animation: var(--myAnimation)
 }
 
 #sidebar.collapsed #sidebar-tabs > .item.active {
     border-bottom: 1px solid var(--myActiveLight);
+    animation: var(--myAnimation)
 }
 
 li.folder.droptarget > header h3 i {
     text-shadow: 0 0 4px var(--myActiveLight);
+    animation: var(--myAnimation)
 }
 
 #context-menu li.context-item:hover {
-    text-shadow: 0 0 4px var(--myActiveLight)
+    text-shadow: 0 0 4px var(--myActiveLight);
+        animation: var(--myAnimation)
 }
 
 #players ol .player.context .player-name {
-    text-shadow: 0 0 5px var(--myActiveLight)
+    text-shadow: 0 0 5px var(--myActiveLight);
+        animation: var(--myAnimation)
 }
 
 select:focus {
-    box-shadow: 0 0 5px var(--myActiveLight)
+    box-shadow: 0 0 5px var(--myActiveLight);
+        animation: var(--myAnimation)
 }
 
 button:hover,
 button:focus {
-    box-shadow: 0 0 5px var(--myActiveLight)
+    box-shadow: 0 0 5px var(--myActiveLight);
+        animation: var(--myAnimation)
 }
 
+a:hover {
+text-shadow: 0 0 8px var(--myActiveLight);
+    animation: var(--myAnimation)
+}
+
+@keyframes color-change {
+0% { color: pink; }
+50% { color: blue; }
+100% { color: pink; }
+}

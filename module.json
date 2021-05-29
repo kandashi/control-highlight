@@ -19,7 +19,8 @@
     "/scripts/module.js"
   ],
   "styles": [
-    "/styles/module.css"
+    "/styles/module.css",
+    "/styles/dnd5e.css"
   ],
   "languages": [
     {
