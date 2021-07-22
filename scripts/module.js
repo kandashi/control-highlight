@@ -82,7 +82,7 @@ Hooks.once('ready', refresh);
 
 function refresh(){
     if(game.settings.get("control-highlight", "partyMode")){
-        document.documentElement.style.setProperty('--myAnimation', "color-change 0.5s infinite");
+        document.documentElement.style.setProperty('--myAnimation', "color-change 4s infinite");
     }
     else document.documentElement.style.setProperty('--myAnimation', "");
 

@@ -127,8 +127,15 @@ text-shadow: 0 0 8px var(--myActiveLight);
     animation: var(--myAnimation)
 }
 
+.placeable-hud .control-icon.active {
+    border: 1px solid var(--myActiveHighlight);
+}
+
 @keyframes color-change {
-0% { color: pink; }
-50% { color: blue; }
-100% { color: pink; }
+0% { color: #FF0018; }
+20% { color: #FFA52C; }
+40% { color: #FFFF41; }
+60% { color: #008018; }
+80% { color: #0000F9; }
+100% { color: #86007D; }
 }
