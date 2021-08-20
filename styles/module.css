@@ -1,58 +1,58 @@
-:root {
+body :root {
     --myBorderColor: #000000;
     --myBorderWidth: 0.5px;
     --myActiveLight: #ff0000;
     --myActiveHighlight: #ff6400;
     --myAnimation: ;
 }
-#sidebar-tabs > .item {
+body #sidebar-tabs > .item {
     -webkit-text-stroke: var(--myBorderColor);
     -webkit-text-stroke-width: var(--myBorderWidth);
     font-size: larger;
     text-shadow: 0 0 5px black;
 }
 
-#sidebar-tabs > .item.active {
+body #sidebar-tabs > .item.active {
     border: 1px solid var(--myActiveLight);
     box-shadow: 0 0 6px inset var(--myActiveHighlight);
     animation: var(--myAnimation)
 }
 
-#controls .scene-control {
+body #controls .scene-control {
     font-size: 28px;
     -webkit-text-stroke: black;
     -webkit-text-stroke-width: var(--myBorderWidth);
 }
 
-#controls .scene-control.active,
-#controls .control-tool.active,
-#controls .scene-control:hover,
-#controls .control-tool:hover {
+body #controls .scene-control.active,
+body #controls .control-tool.active,
+body #controls .scene-control:hover,
+body #controls .control-tool:hover {
     border: 1px solid var(--myActiveLight);
     border-bottom: 1px solid var(--myActiveHighlight);
     box-shadow: 0 0 10px var(--myActiveHighlight);
     animation: var(--myAnimation)
 }
 
-#hotbar .macro:hover {
+body #hotbar .macro:hover {
     box-shadow: 0 0 10px var(--myActiveHighlight) inset;
     animation: var(--myAnimation)
   }
 
-  #navigation #scene-list .scene.view,
-#navigation #scene-list .scene.context {
+body #navigation #scene-list .scene.view,
+body #navigation #scene-list .scene.context {
   border: 1px solid var(--myActiveLight);
   border-bottom: 1px solid var(--myActiveHighlight);
   box-shadow: 0 0 10px var(--myActiveHighlight);
   animation: var(--myAnimation)
 }
 
-#hotbar .macro.active:hover {
+body #hotbar .macro.active:hover {
     border: 1px solid var(--myActiveLight);
     animation: var(--myAnimation)
 }
 
-::-webkit-scrollbar-thumb {
+body ::-webkit-scrollbar-thumb {
     outline: none;
     border-radius: 3px;
     background-color: var(--myActiveLight);
@@ -60,7 +60,7 @@
     animation: var(--myAnimation)
 }
 
-#sidebar-tabs {
+body #sidebar-tabs {
     flex: 0 0 32px;
     box-sizing: border-box;
     margin: 0 0 5px;
@@ -69,65 +69,65 @@
     animation: var(--myAnimation)
 }
 
-.tabs .item.active {
+body .tabs .item.active {
     text-shadow: 0 0 10px var(--myActiveLight);
     animation: var(--myAnimation)
 }
 
-.filepicker .directory > li:hover {
+body .filepicker .directory > li:hover {
     text-shadow: 0 0 5px var(--myActiveLight);
     animation: var(--myAnimation)
 }
 
-.placeable-hud input[type="text"]:focus {
+body .placeable-hud input[type="text"]:focus {
     box-shadow: 0 0 10px var(--myActiveHighlight);
     border: 1px solid var(--myActiveLight);
     animation: var(--myAnimation)
 }
 
-#sidebar-tabs {
+body #sidebar-tabs {
     border-bottom: 1px solid var(--myActiveHighlight);
     box-shadow: 0 0 10px var(--myActiveLight);
     animation: var(--myAnimation)
 }
 
-#sidebar.collapsed #sidebar-tabs > .item.active {
+body #sidebar.collapsed #sidebar-tabs > .item.active {
     border-bottom: 1px solid var(--myActiveLight);
     animation: var(--myAnimation)
 }
 
-li.folder.droptarget > header h3 i {
+body li.folder.droptarget > header h3 i {
     text-shadow: 0 0 4px var(--myActiveLight);
     animation: var(--myAnimation)
 }
 
-#context-menu li.context-item:hover {
+body #context-menu li.context-item:hover {
     text-shadow: 0 0 4px var(--myActiveLight);
         animation: var(--myAnimation)
 }
 
-#players ol .player.context .player-name {
+body #players ol .player.context .player-name {
     text-shadow: 0 0 5px var(--myActiveLight);
         animation: var(--myAnimation)
 }
 
-select:focus {
+body select:focus {
     box-shadow: 0 0 5px var(--myActiveLight);
         animation: var(--myAnimation)
 }
 
-button:hover,
-button:focus {
+body button:hover,
+body button:focus {
     box-shadow: 0 0 5px var(--myActiveLight);
         animation: var(--myAnimation)
 }
 
-a:hover {
+body a:hover {
 text-shadow: 0 0 8px var(--myActiveLight);
     animation: var(--myAnimation)
 }
 
-.placeable-hud .control-icon.active {
+body .placeable-hud .control-icon.active {
     border: 1px solid var(--myActiveHighlight);
 }
 
