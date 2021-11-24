@@ -1,36 +1,36 @@
+
 body :root {
-    --myBorderColor: #000000;
-    --myBorderWidth: 0.5px;
-    --myActiveLight: #ff0000;
-    --myActiveHighlight: #ff6400;
     --myCriticalColor: #008000;
     --myFumbleColor: #ff0000;
 }
 
-body .dnd5e.sheet .editable h4.rollable:hover,
-.dnd5e.sheet .editable .rollable:hover > h4 {
-  text-shadow: 0 0 10px var(--myActiveLight);
+body .dnd5e.sheet .editable h4.rollable:hover, 
+body .dnd5e.sheet .editable .rollable:hover > h4 {
+  text-shadow: 0 0 10px var(--color-shadow-primary);
 }
 
 body .dnd5e.sheet .filter-list .filter-item:hover {
-text-shadow: 0 0 4px var(--myActiveLight);
+text-shadow: 0 0 4px var(--color-shadow-primary);
 }
 
 body .dnd5e.sheet.actor .traits i.fas:hover {
-text-shadow: 0 0 10px var(--myActiveLight);
+text-shadow: 0 0 10px var(--color-shadow-primary);
 }
 
 body .dnd5e.chat-card .card-header h3:hover {
     color: #111;
-    text-shadow: 0 0 10px var(--myActiveLight);
+    text-shadow: 0 0 10px var(--color-shadow-primary);
 }
 
-body .dnd5e input[type="text"]:hover,
-.dnd5e input[type="number"]:hover,
-.dnd5e input[type="text"]:focus,
-.dnd5e input[type="number"]:focus {
-  box-shadow: 0 0 8px var(--myActiveLight);
+body .dnd5e input[type="text"]:hover, 
+body .dnd5e input[type="number"]:hover, 
+body .dnd5e input[type="checkbox"]:hover, 
+body .dnd5e input[type="text"]:focus, 
+body .dnd5e input[type="number"]:focus, 
+body .dnd5e input[type="checkbox"]:focus {
+  box-shadow: 0 0 8px var(--color-shadow-primary);
 }
+
 
 body .dice-roll .dice-total.critical {
     color: var(--myCriticalColor);

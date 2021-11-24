@@ -95,8 +95,8 @@ function refresh(){
 
     document.documentElement.style.setProperty('--myBorderColor', BC);
     document.documentElement.style.setProperty('--myBorderWidth', `${BW}px`);
-    document.documentElement.style.setProperty('--myActiveLight', AL);
-    document.documentElement.style.setProperty('--myActiveHighlight', AG);
+    document.documentElement.style.setProperty('--color-shadow-primary', AL);
+    document.documentElement.style.setProperty('--color-shadow-highlight', AG);
     document.documentElement.style.setProperty('--myCriticalColor', CC);
     document.documentElement.style.setProperty('--myFumbleColor', FC);
 }
